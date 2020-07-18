@@ -1,0 +1,175 @@
+
+@font-face { font-family: titlefont; src: url('fonts/Lobster-Regular.ttf'); }
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: RGB(200,200,200);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.ingred_result{
+	overflow: auto;
+	width: 90%;
+	height: 160px;
+	margin-top:10px;
+	color: white;
+	font-size: 25px;
+	font-family: Arial;
+	margin-bottom:10px;
+	background-color: RGBa(160,160,160,0.6);
+	border-radius: 3px;
+}
+
+.searchbar{
+	font-size: 30px;
+	border: none;
+	border-radius: 2px;
+	background-color: RGBa(255,255,255,0.4);
+	border: 2px solid RGBa(255,255,255,0.0);
+	color: RGB(255,255,255);
+	transition-duration:0.3s;
+}
+.searchbar:focus{
+	border-color: RGBa(255,255,255,0.5);
+}
+.searchbar::placeholder{
+	color: RGB(200,200,200);
+}
+
+.ingred_holder{
+	font-size: 30px;
+	color: white;
+	width: 500px;
+	height: 40px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+	border: 1px solid RGBa(255,255,255,0.4);
+	background-color: RGBa(160,160,160,0.6);
+}
+
+.ingred_delete{
+	font-size: 30px;
+	width: 40px;
+	height: 100%;
+	transition-duration: 0.2s;
+	border-radius: 3px;
+	border:none;
+}
+.ingred_delete:hover{
+	background-color: RGB(190,100,100);
+}
+
+.ingred_selected{
+	position: relative;
+	overflow: auto;
+	height: calc(100% - 450px);
+	min-height: 80px;
+	margin-bottom: 10px;
+}
+
+
+
+.ingred_button{
+	width: 160px;
+	font-size: 24px;
+	height: 30px;
+	margin: 1px;
+	border: none;
+	opacity: 1.5;
+	border-radius: 8px;
+	transition-duration: 0.1s;
+}
+.ingred_button:hover{
+	background-color: RGB(200,200,200);
+	width:180px;
+}
+.ingred_button:active{
+
+}
+
+.search_button{
+	transition-duration: 0.2s;
+	font-size: 28px;
+	color: white;
+	width: 190px;
+	height: 40px;
+	border-radius: 3px;
+	border: none;
+	background-color: RGB(0,150,50);
+}
+.search_button:hover{
+	background-color: RGB(0,220,50);
+}
+.search_button:disabled{
+	color: gray;
+	background-color: RGB(30,80,30);
+}
+
+.left_side{
+	position: absolute;
+	top: 70px;
+	width: 49%;
+	height: 95%;
+	left:0;
+	margin: 8px;
+	overflow: auto;
+}
+
+.right_side{
+	position: absolute;
+	top: 70px;
+	width: 49%;
+	height: 95%;
+	right:0;
+	margin: 8px;
+	overflow: auto;
+}
+
+.recipe_list{
+	font-family: Arial;
+	width: 90%;
+	height: 80%;
+	font-size: 30px;
+	color: white;
+	border-radius: 3px;
+	margin: none;
+	background-color: RGBa(160,160,160,0.6);
+}
+
+.recipe_link{
+	padding-left: 6px;
+	background-color: RGBa(50,50,50,0.5);
+	color: RGBa(255,255,255,0);
+	margin: 2px;
+	height: 35px;
+	transition-duration: 0.1s;
+	border: none;
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+.recipe_link:hover{
+	height: 60px;
+	color: RGBa(255,255,255,1);
+}
+
+.login{
+	background: RGB(42, 184, 92);
+	border-radius: 5px;
+	position: fixed;
+	width: 300px;
+	right: -350px;
+	margin-top: 20px;
+	padding: 20px;
+	display: block;
+	opacity: 0;
+	transition-duration: 0.4s;
+}
+.login.active{
+	opacity: 1;
+	right: 50px;
+}

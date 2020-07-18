@@ -1,0 +1,40 @@
+header{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  left: 0px;
+  z-index: 2;
+  transition-duration: 0.3s;
+  opacity: 0;
+  display: flex;
+  background-color: RGB(29, 140, 59);
+}
+
+
+header > h1 {
+  padding: 10px;
+  font-size: x-large;
+  background-color: RGB(29, 140, 59);
+}
+footer > p{
+  border-top: 1px dashed black;
+}
+table{
+  border-spacing: 5px;
+  width: 530px;
+}
+th{
+  color: #FFF;
+  background: #000;
+  text-align: left;
+}
+td{
+  border-bottom: 1px solid black;
+  padding: 3px;
+  background: #F0F0F0;
+  text-align: left;
+  vertical-align: top;
+}

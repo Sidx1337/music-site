@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+ <%- include('header'); -%>
+ <% for (var i = 1; i < playlist.length; i++) {%>
+ <div class="card" >
+  <p><%=playlist[i].name%></p>
+   </style>
+       <h2 style="text-align: left;"></h2>
+       <div class="d-flex flex-row bd-highlight mb-3">
+  <audio controls style = "width: 95%;">
+    <source src="music/<%=playlist[i].url%>">
+  </audio>
+  <form class="form-music" action='/mymusic/delete' method=post>
+  <button type="submit" class="btn btn-warning font-weight-light" >Delete</button>
+  <input hidden name='music' value=<%=playlist[i].music_id%>>
+  </form>
+  </div>
+  <%}%>
+ </body>
+</html>
